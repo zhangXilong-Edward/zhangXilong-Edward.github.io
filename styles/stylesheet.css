@@ -1,0 +1,247 @@
+/* navigation */
+/* 
+.main {
+    animation: transitionIn 1s;
+
+}
+
+@keyframes transitionIn {
+    from {
+        opacity:0; 
+        transform: rotateX(-10deg);
+    }
+    to {
+        opacity:1; 
+        transform: rotateX(-10deg);
+    }
+    
+} */
+/* fade transition */
+.transition-fade {
+    opacity: 1;
+    transition: 500ms;
+    transform: translateX(0);
+    transform-origin: left;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 1;
+    transform: translateX(100%);
+  }
+  
+  html.is-leaving .transition-fade {
+    opacity: 0;
+    transform: translateX(0);
+  }
+  
+
+.header {
+    background: white;
+    text-align: center;
+}
+
+.navbar-toggler { margin: 0 auto; }
+
+.nav-link{
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: 1000;
+    padding: 2.1rem; 
+    color: black; 
+}
+
+
+/* banner */
+
+.main .banner .banner-title{
+    padding-left:5%;
+    font-weight: 500;
+}
+
+.main .banner .banner-title h3 {
+    padding-top:5%;
+}
+
+
+.main .banner .banner-title h4 {
+    padding-left:5%;
+    font-size: 1.5rem;
+}
+
+.title-text {
+    font-family: 'Raleway', serif;
+    text-align: center;
+}
+
+
+/* card  */
+
+.card-body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-family:'Raleway', sans-serif;
+}
+
+.detail {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-size: 90%;
+}
+
+.component-description{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    font-family: 'Raleway', serif;
+}
+
+/* for the pages contains video responsive video */
+.video-responsive {
+    position: relative;
+    display: block;
+    width: 300px; 
+    overflow: hidden;
+  }
+  
+  
+  .video-responsive::before {
+    display: block;
+    content: "";
+    padding-top: 56.25%;
+  }
+  
+  .video-responsive-item {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+  }
+
+/*hover */
+img.filter {
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+}
+
+
+img.filter:hover {
+    filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+}
+
+img.filter-sepa :hover {
+    filter: sepia(80%);
+    -webkit-filter: sepia(80%);
+}
+
+  /* social media buttons */
+
+ /* minimal sm icons */
+.socialbtns .fa {
+    color: #FFF;
+    text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -webkit-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -moz-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    -o-text-shadow: 1px 1px 0px #000,
+            1px -1px 0px #000,
+            -1px 1px 0px #000,
+            -1px -1px 0px #000;
+    transition: all ease-out 0.5s;
+    -moz-transition: all ease-out 0.5s;
+    -webkit-transition: all ease-out 0.5s;
+    -o-transition: all ease-out 0.5s;
+}
+
+.socialbtns .fa:hover {
+    color: #000;
+    text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -webkit-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -moz-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    -o-text-shadow: 1px 1px 0px #fff,
+            1px -1px 0px #fff,
+            -1px 1px 0px #fff,
+            -1px -1px 0px #fff;
+    transition: all ease 0.5s;
+    -moz-transition: all ease-in 0.5s;
+    -webkit-transition: all ease-in 0.5s;
+    -o-transition: all ease-in 0.5s;
+}
+.main {
+    padding-top: 2%; 
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-right: 5%;    
+    overflow-x: hidden;
+}
+
+.more-card {
+    width: 30%; 
+}
+
+.more-card-2 {
+    width: 50%; 
+}
+/* responsive video */
+
+.iframe-container{
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; 
+    height: 0;
+  }
+  .iframe-container iframe{
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  @media only screen and (max-width: 600px) {
+    .card-text-small {
+        font-size:70%; 
+    }
+
+    body {
+        font-size: 75%;
+    }
+
+    .more-card {
+        width: 48%; 
+    }
+
+    .more-card-2 {
+        width: 70%; 
+    }
+
+    .card-gap {
+        padding-bottom: 15%; 
+    }
+  }
