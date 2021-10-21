@@ -125,7 +125,7 @@ img.filter-sepa :hover {
     filter: sepia(80%);
     -webkit-filter: sepia(80%);
 }
-a { text-decoration: none; }; 
+
 
   /* social media buttons */
 
@@ -229,3 +229,5 @@ a { text-decoration: none; };
         padding-bottom: 15%; 
     }
   }
+
+a { text-decoration: none; }
