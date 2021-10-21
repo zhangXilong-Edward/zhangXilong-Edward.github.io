@@ -1,21 +1,4 @@
-/* navigation */
-/* 
-.main {
-    animation: transitionIn 1s;
 
-}
-
-@keyframes transitionIn {
-    from {
-        opacity:0; 
-        transform: rotateX(-10deg);
-    }
-    to {
-        opacity:1; 
-        transform: rotateX(-10deg);
-    }
-    
-} */
 /* fade transition */
 .transition-fade {
     opacity: 1;
@@ -142,6 +125,7 @@ img.filter-sepa :hover {
     filter: sepia(80%);
     -webkit-filter: sepia(80%);
 }
+a { text-decoration: none; }; 
 
   /* social media buttons */
 
