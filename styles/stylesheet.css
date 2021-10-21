@@ -230,4 +230,6 @@ img.filter-sepa :hover {
     }
   }
 
-a { text-decoration: none; }
+a {
+  text-decoration: none !important;
+}
