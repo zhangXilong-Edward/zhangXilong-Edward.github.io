@@ -1,3 +1,12 @@
+/* main section */
+.main {
+    padding-top: 2%; 
+    padding-left: 10%;
+    padding-bottom: 2%;
+    padding-right: 10%;    
+    overflow-x: hidden;
+    font-size: 115%;
+}
 
 /* fade transition */
 .transition-fade {
@@ -82,6 +91,13 @@
     flex-direction: column;
     height: 100%;
     font-family: 'Raleway', serif;
+}
+.more-card {
+    width: 30%; 
+}
+
+.more-card-2 {
+    width: 50%; 
 }
 
 /* for the pages contains video responsive video */
@@ -177,21 +193,8 @@ img.filter-sepa :hover {
     -webkit-transition: all ease-in 0.5s;
     -o-transition: all ease-in 0.5s;
 }
-.main {
-    padding-top: 2%; 
-    padding-left: 5%;
-    padding-bottom: 2%;
-    padding-right: 5%;    
-    overflow-x: hidden;
-}
 
-.more-card {
-    width: 30%; 
-}
 
-.more-card-2 {
-    width: 50%; 
-}
 /* responsive video */
 
 .iframe-container{
@@ -209,6 +212,12 @@ img.filter-sepa :hover {
   }
 
   @media only screen and (max-width: 600px) {
+      
+     .main {
+        padding: 1%;    
+        overflow-x: hidden;
+        font-size: 100%; 
+    }
     .card-text-small {
         font-size:70%; 
     }
