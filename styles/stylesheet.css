@@ -129,18 +129,31 @@
 img.filter {
     filter: grayscale(90%);
     -webkit-filter: grayscale(90%);
+    transition: filter 1s ease-out 1ms; 
+    animation-duration: 1s;
+    transform-origin: bottom;
 }
 
-
-img.filter:hover {
+img.filter:hover, img.filter.hover {
     filter: grayscale(0%);
     -webkit-filter: grayscale(0%);
+    animation-name: bounce;
+    animation-timing-function: ease;
 }
 
-img.filter-sepa :hover {
+img.filter-sepa:hover, img.filter-sepa:hover{
     filter: sepia(80%);
     -webkit-filter: sepia(80%);
+    animation-name: bounce;
+    animation-timing-function: ease;
 }
+
+@keyframes bounce {
+    0%   { transform: translateY(0); }
+    50%  { transform: translateY(-100px); }
+    100% { transform: translateY(0); }
+  }
+
 
 
   /* social media buttons */
