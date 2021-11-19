@@ -129,8 +129,9 @@
 img.filter {
     filter: grayscale(90%);
     -webkit-filter: grayscale(90%);
-    transition: filter 1s ease-out 1ms; 
-    animation-duration: 1s;
+    transition: filter 1s ease-out 50ms; 
+    animation-duration: 800ms;
+    animation-iteration-count: 2;
     transform-origin: bottom;
 }
 
